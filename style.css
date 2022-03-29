@@ -1,0 +1,223 @@
+body {
+  font-family: "Oswald", sans-serif;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+img {
+  height: 40px;
+}
+
+.parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 200px 1fr 200px;
+  height: 60px;
+}
+
+.left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  height: 100%;
+  width: 100%;
+  margin-left: 20px;
+}
+
+.span1 {
+  margin-left: 12px;
+  margin-top: 12px;
+  font-weight: bold;
+  height: 100%;
+  width: 100%;
+}
+
+.logo-left {
+  margin: 12px 0 0 12px;
+  height: 100%;
+}
+
+.logo-left > img {
+  height: 52px;
+}
+
+.center {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-center > img {
+  height: 52px;
+}
+
+.right {
+  height: 100%;
+  width: 100%;
+}
+
+.list {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+}
+
+.list > li {
+  margin-right: 20px;
+  margin-top: 12px;
+}
+
+.list > li > a > img {
+  height: 24px;
+}
+
+/*MAIN*/
+
+.main {
+  height: 520px;
+  background-color: #000;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.section-y {
+  width: 100%;
+  height: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-right: 5px solid #fff;
+}
+
+.section-y > div {
+  background-image: url(./media/texture.jpg);
+  -webkit-box-shadow: 9px 7px 23px -9px rgba(156, 156, 156, 1);
+  -moz-box-shadow: 9px 7px 23px -9px rgba(156, 156, 156, 1);
+  box-shadow: 9px 7px 23px -9px rgba(156, 156, 156, 1);
+  width: 240px;
+}
+
+.figure-section-y > img {
+  height: 60px;
+}
+
+.div-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 24px;
+  border-radius: 5px;
+  height: 80px;
+}
+
+.section-x {
+  width: 100%;
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.div1-section-x {
+  display: inline;
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 40px;
+  border-bottom: 5px solid #fff;
+}
+
+.div2-section-x {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  height: 100%;
+  justify-items: center;
+  align-items: center;
+}
+
+.div2-section-x > div {
+  background-image: url(./media/estadio.jpg);
+  background-position: center center;
+  background-size: cover;
+  width: 80%;
+  height: 80%;
+  display: grid;
+  grid-template-rows: 70% 30%;
+  justify-items: center;
+  align-items: center;
+  -webkit-box-shadow: 9px 7px 23px -9px rgba(156, 156, 156, 1);
+  -moz-box-shadow: 9px 7px 23px -9px rgba(156, 156, 156, 1);
+  box-shadow: 9px 7px 23px -9px rgba(156, 156, 156, 1);
+  border-radius: 5px;
+  border: 5px solid #fff;
+  filter: grayscale(100%);
+}
+
+.div2-section-x > div:hover {
+  filter: grayscale(0);
+  transition: 0.5s;
+}
+
+.figure-section-x {
+  margin: 0;
+  padding: 0;
+  border-radius: 5px;
+}
+
+.figure-section-x > img {
+  height: 180px;
+}
+
+.div2-section-x > div > span {
+  font-size: 24px;
+  margin-bottom: 32px;
+  line-height: 24px;
+  text-align: center;
+}
+
+/*FOOTER*/
+
+.footer {
+  display: grid;
+  width: 100%;
+  height: 40px;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.div1-footer {
+  display: flex;
+}
+
+.div1-footer > span {
+  height: 100;
+}
+
+.div1-footer > ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.div1-footer img {
+  height: 20px;
+  margin: 2px 0 0 12px;
+}
